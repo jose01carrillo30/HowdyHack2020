@@ -1,0 +1,63 @@
+@font-face {
+    font-family: TitilliumReg;
+    src: url(fonts/TitilliumWeb-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: TitilliumBold;
+    src: url(fonts/TitilliumWeb-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 50px;
+    font-family: TitilliumBold;
+    margin: 0;
+}
+
+h2 {
+    font-family: TitilliumReg;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-family: TitilliumReg;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0;
+}
+
+.active {
+    background-color: red;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-family: TitilliumReg;
+}
+  
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: red;
+}

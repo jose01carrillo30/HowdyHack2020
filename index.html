@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Home - YTCaptionCommunity</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+    <script src="main.js"></script>
+</head>
+
+<h1>YTCaptionCommunity</h1>
+<h2>Captioning that counts!</h2><br>
+
+<ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="complete.html">Published Captions</a></li>
+    <li><a href="contribute.html">Contribute</a></li>
+    <li><a href="request.php">Get Captioned</a></li>
+    <li style="float:right"><a href="login.php">Login</a></li>
+</ul><br><br>
+
+<body>
+    <div style="padding-left: 50px; padding-right: 50px;">
+        <p>
+            This past summer, Google announced that it will be shutting down the Community Contributions feature of Youtube on September 28 of this year,
+            citing a lack of use and reports of "spam and abuse." The tool was primarily used to let anyone contribute translations for video titles or
+            submit descriptions, closed captions, or subtitles. Google also announced that its two other captioning options - auto-generated or manual
+            - will remain available, and that it is offering to cover the cost of a 6-month subscription of Amara.org for all creators who have used the
+            Community Contribution feature for at least 3 videos in the last 60 days. 
+        </p><br>
+        <p>
+            The purpose of this project is to continue supporting this YouTube feature as best as we can as a community. Not all content creators can
+            afford to pay for captioning services and the auto-generated captions are not reliable and lose the essence of the actual video and its
+            message. Not only does this affect the vieiwing experience for people who do not speak the language spoken in the video, but it also
+            prevents people with disabilities from fully enjoying the video, and that's not good at all. All contributions are much appreciated and we
+            thank you for your time!
+        </p>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            Select image to upload:
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Image" name="submit">
+        </form>
+    </div>
+
+</body>
+</html>
